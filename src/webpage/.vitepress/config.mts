@@ -49,7 +49,7 @@ function nav(): DefaultTheme.NavItem[] {
     {
       text: "Repos",
       items: [
-        { text: "Osition-Website", link: "https://github.com/osition/osition", target: "_blank" },
+        { text: "Osition-Website", link: "https://github.com/osition/osition.github.io", target: "_blank" },
         { text: "Osition-Server", link: "https://github.com/osition/osition-server", target: "_blank" },
         { text: "Osition-Web", link: "https://github.com/osition/osition-web", target: "_blank" },
       ]
