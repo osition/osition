@@ -3,8 +3,8 @@ import {DefaultTheme, defineConfig} from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'en-US',
-  title: "Osition",
-  titleTemplate: "Osition Media Server",
+  title: "Jarklin",
+  titleTemplate: "Jarklin Media Server",
   description: "A Free Software Media System",
   srcDir: 'src/',
   // base: "/",
@@ -12,13 +12,13 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/osition.svg' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/jarklin.svg' }],
   ],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    logo: '/osition.svg',
+    logo: '/jarklin.svg',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/osition/osition-server' }
+      { icon: 'github', link: 'https://github.com/jarklin/jarklin' }
     ],
     search: {
       provider: "local",
@@ -29,7 +29,7 @@ export default defineConfig({
       '/config/': { 'base': '/config/', items: sidebarConfig() },
     },
     footer: {
-      copyright: "Copyright © 2024-present Osition",
+      copyright: "Copyright © 2024-present Jarklin",
     },
   }
 });
@@ -38,7 +38,7 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: "Guide",
-      link: '/guide/what-is-osition/',
+      link: '/guide/what-is-jarklin',
       activeMatch: '/guide/',
     },
     {
@@ -49,9 +49,9 @@ function nav(): DefaultTheme.NavItem[] {
     {
       text: "Repos",
       items: [
-        { text: "Osition-Website", link: "https://github.com/osition/osition.github.io", target: "_blank" },
-        { text: "Osition-Server", link: "https://github.com/osition/osition-server", target: "_blank" },
-        { text: "Osition-Web", link: "https://github.com/osition/osition-web", target: "_blank" },
+        { text: "Jarklin-Website", link: "https://github.com/jarklin/jarklin.github.io", target: "_blank" },
+        { text: "Jarklin-Server", link: "https://github.com/jarklin/jarklin", target: "_blank" },
+        { text: "Jarklin-WebUI", link: "https://github.com/jarklin/jarklin-web", target: "_blank" },
       ]
     }
   ];
@@ -63,7 +63,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       text: "Introduction",
       collapsed: false,
       items: [
-        { text: "What is Osition?", link: 'what-is-osition' },
+        { text: "What is Jarklin?", link: 'what-is-jarklin' },
         { text: "Getting Started", link: 'getting-started' },
       ],
     },
