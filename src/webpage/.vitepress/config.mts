@@ -63,11 +63,21 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
             text: "Introduction",
             collapsed: false,
             items: [
-                {text: "What is Jarklin?", link: 'what-is-jarklin'},
-                {text: "Getting Started", link: 'getting-started'},
+                { text: "What is Jarklin?", link: 'what-is-jarklin' },
+                {
+                    text: "Getting Started",
+                    //link: '/guide/getting-started/',
+                    collapsed: false,
+                    items: [
+                        { text: "Automated Build", link: "getting-started/automated-build" },
+                        { text: "Pip", link: "getting-started/pip" },
+                        { text: "System Package", link: "getting-started/system-package" },
+                        { text: "Docker", link: "getting-started/docker" },
+                    ]
+                },
             ],
         },
-        {text: "Configuration", base: '/config/', link: ".",},
+        { text: "Configuration", base: '/config/', link: "." },
     ];
 }
 
