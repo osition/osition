@@ -1,7 +1,7 @@
 # Getting Started?
 
 ::: warning
-Currently there exists nothing. So you won't get any results.
+Currently there exists nothing. So you won't really be getting any results.
 :::
 
 ::: warning
@@ -10,6 +10,8 @@ It may work on other systems but the Guide is for linux.
 :::
 
 [[TOC]]
+
+<!---
 
 ## From Docker
 
@@ -23,17 +25,21 @@ Not available yet
 Not available yet
 :::
 
-<!--
 [Download the Package](https://github.com/jarklin/jarklin-server/releases/download/latest/jarklin-server.deb)
--->
 
-## From Source
+--->
+
+## From Automated Build
 
 ```bash
-git clone https://github.com/jarklin/jarklin.git
-cd jarklin
-make build
-make run
+# download the automated build
+wget https://github.com/jarklin/jarklin/releases/download/latest/jarklin.tgz
+# extract the build into the current directory
+tar -xf jarklin.tgz
+# download newest version of the web-ui
+./jarklin/jarklin download-web-ui
+# create web-ui directory
+mkdir -p jarklin/web/web-ui/
+# extract the web-ui into the designated folder
+tar -xf ./web-ui.tgz -C jarklin/web/web-ui/
 ```
-
-For better results of file identification you can also install libmagic (`apt install libmagic1`)
