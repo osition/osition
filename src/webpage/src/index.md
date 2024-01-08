@@ -33,3 +33,48 @@ features:
     icon: ⚙️
     details: Hopefully soon Jarklin can be installed over docker or with a .deb package file.
 ---
+
+
+<script setup lang="ts">
+import {
+  VPTeamPage,
+  VPTeamPageTitle,
+  VPTeamMembers
+} from 'vitepress/theme'
+
+
+const members = [
+    {
+        avatar: 'https://www.github.com/PlayerG9.png',
+        name: 'PlayerG9',
+        title: 'Creator',
+        links: [
+            { icon: 'github', link: 'https://github.com/PlayerG9' },
+        ]
+    },
+]
+</script>
+
+<!--
+<div style="height: 25px;" />
+
+<h1 style="text-align: center;">Team</h1>
+
+<VPTeamMembers size="small" :members="members" />
+-->
+
+<VPTeamPage>
+  <VPTeamPageTitle>
+    <template #title>
+      Jarklin Team
+    </template>
+    <template #lead>
+      The developers of Jarklin are proud to be part of the project.
+      Members with exceptional contribution are featured below.
+    </template>
+  </VPTeamPageTitle>
+  <VPTeamMembers
+    size="small"
+    :members="members"
+  />
+</VPTeamPage>
