@@ -1,6 +1,8 @@
-# Getting started with the Automated Build
+# Getting started with the Archive
 
-Jarklin has an automated build that is executed and release when new changes are available.
+This is the direct output from the build script.
+
+You have full control where and how you want to install Jarklin.
 
 ```bash
 # download the automated build

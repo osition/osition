@@ -69,7 +69,8 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                     //link: '/guide/getting-started/',
                     collapsed: false,
                     items: [
-                        { text: "Automated Build", link: "getting-started/automated-build" },
+                        { text: "Info", link: "getting-started/" },
+                        { text: "Archive", link: "getting-started/archive" },
                         { text: "Pip", link: "getting-started/pip" },
                         { text: "System Package", link: "getting-started/system-package" },
                         { text: "Docker", link: "getting-started/docker" },
