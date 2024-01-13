@@ -19,7 +19,7 @@ tar -xf jarklin.bundled.tgz
 ./jarklin/jarklin --version
 v0.0.0
 # cleanup
-rm ./jarklin.bundled.tgz ./web-ui.tgz
+rm ./jarklin.bundled.tgz
 ```
 
 ## `jarklin.tgz`
