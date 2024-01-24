@@ -1,7 +1,7 @@
-# Getting Started?
+# Installation
 
 ::: warning
-Currently there exists nothing. So you won't really be getting any results.
+Currently Jarklin is under development and may be unstable
 :::
 
 ::: warning

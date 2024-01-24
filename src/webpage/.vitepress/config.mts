@@ -18,7 +18,7 @@ export default defineConfig({
         // https://vitepress.dev/reference/default-theme-config
         logo: '/jarklin.svg',
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/jarklin/jarklin'}
+            {icon: 'github', link: 'https://github.com/jarklin/jarklin#readme'}
         ],
         search: {
             provider: "local",
@@ -31,7 +31,12 @@ export default defineConfig({
         footer: {
             copyright: "Copyright © 2024-present Jarklin",
         },
-    }
+    },
+    // markdown: {
+    //     toc: {
+    //         level: [2, 3],
+    //     }
+    // }
 });
 
 function nav(): DefaultTheme.NavItem[] {
@@ -65,17 +70,18 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
             items: [
                 { text: "What is Jarklin?", link: 'what-is-jarklin' },
                 {
-                    text: "Getting Started",
-                    //link: '/guide/getting-started/',
+                    text: "Installation",
+                    //link: '/guide/installation/',
                     collapsed: false,
                     items: [
-                        { text: "Info", link: "getting-started/" },
-                        { text: "Archive", link: "getting-started/archive" },
-                        { text: "Pip", link: "getting-started/pip" },
-                        { text: "System Package", link: "getting-started/system-package" },
-                        { text: "Docker", link: "getting-started/docker" },
+                        { text: "Info", link: "installation/" },
+                        { text: "Archive", link: "installation/archive" },
+                        { text: "Pip", link: "installation/pip" },
+                        { text: "System Package", link: "installation/system-package" },
+                        { text: "Docker", link: "installation/docker" },
                     ]
                 },
+                { text: "Setup", link: "setup" },
             ],
         },
         { text: "Configuration", base: '/config/', link: "." },

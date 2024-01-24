@@ -2,11 +2,13 @@
 
 The Archive is meant for you to have full control where and how you want to install Jarklin.
 
+## Installation
+
 Jarklin offers two versions of archives.
 - `jarklin.tgz`: contains only the build of Jarklin.
 - `jarklin.bundled.tgz`: contains the build and the web-ui files.
 
-## `jarklin.bundled.tgz`
+### `jarklin.bundled.tgz`
 
 This is the common and recommended version as dependencies are already included
 
@@ -22,7 +24,7 @@ v0.0.0
 rm ./jarklin.bundled.tgz
 ```
 
-## `jarklin.tgz`
+### `jarklin.tgz`
 
 This version is useful if you have a different version for the web-ui
 
