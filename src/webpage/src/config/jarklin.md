@@ -59,6 +59,25 @@
 > > 
 > > > #### `web.auth.username` / `web.auth.password`
 > > > Should be pretty self-explanatory
+> 
+> > ### `web.gzip`
+> > Whether to gzip the content.
+> > Reduces the response-size of text-based responses on cost of CPU-Time.
+> > 
+> > note: Should be done by the Proxy-Server if possible. Otherwise, this is the option.
+> >
+> > eg: `yes`, `no`
+> 
+> > ### `web.proxy_fix`
+> > Tell jarklin that it's behind a Proxy.
+> > If this config exists, the default-values are used.
+> > 
+> > keys: `x_forwarded_for`, `x_forwarded_proto`, `x_forwarded_host`, `x_forwarded_port`, `x_forwarded_prefix`
+> > 
+> > value: is the trusted depth
+> >
+> > eg: `web.proxy_fix.x_forwarded_for: 2`  (behind two proxies)
+
 
 > ## `cache`
 > Everything related to the cache-generation.
