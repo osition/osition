@@ -17,9 +17,9 @@ Jarklin offers various ways to be installed to be perfect for your needs and you
 
 - [Archive](./archive.md)
   - Most control as you must specify where and how it's installed
-- [Docker](./docker.md)
+- ~~[Docker](./docker.md)~~ <small>(not available yet)</small>
   - Isolates Jarklin from the rest of your system
-- [pip](./pip.md)
+- ~~[pip](./pip.md)~~ <small>(not available yet)</small>
   - Installation of a wheel with pip (Maybe gets removed later)
-- [system-package](./system-package.md)
+- ~~[system-package](./system-package.md)~~ <small>(not available yet)</small>
   - Installation over your system package manager
