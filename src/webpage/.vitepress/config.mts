@@ -48,7 +48,7 @@ function nav(): DefaultTheme.NavItem[] {
         },
         {
             text: "Config",
-            link: '/config/',
+            link: '/config/jarklin',
             activeMatch: '/config/',
         },
         {
@@ -89,5 +89,15 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
 }
 
 function sidebarConfig(): DefaultTheme.SidebarItem[] {
-    return [];
+    return [
+        { text: "Config-File", link: "jarklin" },
+        {
+            text: "Behind a Proxy",
+            collapsed: false,
+            items: [
+                { text: "Info", link: "behind-a-proxy/" },
+                { text: "Nginx", link: "behind-a-proxy/nginx" },
+            ]
+        }
+    ];
 }
