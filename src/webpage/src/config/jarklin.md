@@ -130,25 +130,25 @@
 > > 
 > > eg: `/private/`, `*.mkv`
 
-> # `logging`
+> ## `logging`
 > configure logging
 >
-> > ## `logging.level`
+> > ### `logging.level`
 > > how detailed the logging messages should be
 > > 
 > > options: `DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`
 > 
-> > ## `logging.console`
+> > ### `logging.console`
 > > whether to log to the console or not
 > 
-> > ## `logging.file`
+> > ### `logging.file`
 > > whether to log to a file
 > >
-> > > ### `logging.file.path`
+> > > #### `logging.file.path`
 > > > location of the log-file
 > >
-> > > ### `logging.file.max_bytes`
+> > > #### `logging.file.max_bytes`
 > > > maximum size of a log-file before rotating
 > >
-> > > ### `logging.file.backup_count`
+> > > #### `logging.file.backup_count`
 > > > number of log-files to keep
