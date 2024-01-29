@@ -129,3 +129,26 @@
 > > List of pattern which specify which files or directories should be ignored
 > > 
 > > eg: `/private/`, `*.mkv`
+
+> # `logging`
+> configure logging
+>
+> > ## `logging.level`
+> > how detailed the logging messages should be
+> > 
+> > options: `DEBUG`, `INFO`, `WARNING`, `ERROR`, `CRITICAL`
+> 
+> > ## `logging.console`
+> > whether to log to the console or not
+> 
+> > ## `logging.file`
+> > whether to log to a file
+> >
+> > > ### `logging.file.path`
+> > > location of the log-file
+> >
+> > > ### `logging.file.max_bytes`
+> > > maximum size of a log-file before rotating
+> >
+> > > ### `logging.file.backup_count`
+> > > number of log-files to keep
