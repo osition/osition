@@ -45,3 +45,13 @@ tar -xf ./web-ui.tgz -C jarklin/web/web-ui/
 # cleanup
 rm ./jarklin.tgz ./web-ui.tgz
 ```
+
+::: warning
+Jarklin was built for a specific system.
+It may fail during startup of `web` or `cache`.
+For that case there is a `util.sh` script with the `reinstall-dependencies` subcommand.
+This should reinstall the correct dependencies that are working under your system.
+```bash
+/path/to/jarklin/util.sh reinstall-dependencies
+```
+:::
