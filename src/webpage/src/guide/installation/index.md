@@ -15,6 +15,8 @@ All Versions are from an automated build that is executed when new changes are a
 
 Jarklin offers various ways to be installed to be perfect for your needs and your system.
 
+- [Installer](./installer.md)
+  - The most convenient way to install Jarklin
 - [Archive](./archive.md)
   - Most control as you must specify where and how it's installed
 - ~~[Docker](./docker.md)~~ <small>(not available yet)</small>

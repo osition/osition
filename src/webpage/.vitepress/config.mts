@@ -75,6 +75,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                     collapsed: false,
                     items: [
                         { text: "Info", link: "installation/" },
+                        { text: "Installer", link: "installation/installer" },
                         { text: "Archive", link: "installation/archive" },
                         { text: "Pip", link: "installation/pip" },
                         { text: "System Package", link: "installation/system-package" },
