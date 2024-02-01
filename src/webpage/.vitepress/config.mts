@@ -75,14 +75,13 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                     collapsed: false,
                     items: [
                         { text: "Info", link: "installation/" },
-                        { text: "Installer", link: "installation/installer" },
                         { text: "Archive", link: "installation/archive" },
                         { text: "Pip", link: "installation/pip" },
                         { text: "System Package", link: "installation/system-package" },
                         { text: "Docker", link: "installation/docker" },
                     ]
                 },
-                { text: "Setup", link: "setup" },
+                { text: "Wizard", link: "wizard/" },
             ],
         },
         { text: "Configuration", base: '/config/', link: "." },
