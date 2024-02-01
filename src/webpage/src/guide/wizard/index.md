@@ -44,4 +44,4 @@ The filename is either `.jarklin.yaml` or `.jarklin/config.yaml`.
 
 The Wizard offers a convenient dialog to generate such a config file.
 
-See [Configuration](../../config) for more advanced options.
+See [Configuration](../../config/jarklin.md) for more advanced options.
