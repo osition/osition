@@ -33,11 +33,11 @@ As the name suggests this can be used to cleanly remove the installed version of
 
 ## create-config
 
-In order to serve a directory you need to create a configuration file.
+In order to serve a directory you need to create a configuration file the directory you want to server.
 Without an existing configuration file Jarklin refuses to start.
 This was made to ensure you serve the correct directory.
 
-The file is either `.jarklin.yaml` or `.jarklin/config.yaml`.
+The filename is either `.jarklin.yaml` or `.jarklin/config.yaml`.
 
 > `.yaml` is the recommended file-format but `.json` or `.jsonc`
 > is also supported in case you are more familiar with that format or prefer it for different reasons.

@@ -1,5 +1,10 @@
 # Config
 
+::: info
+Jarklin requires an existing configuration file in the current directory to start.
+([More information](../guide/wizard/index.md#create-config))
+:::
+
 > ## `web`
 > 
 > everything related to the web-server
