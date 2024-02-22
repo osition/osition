@@ -82,6 +82,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                     ]
                 },
                 { text: "Wizard", link: "wizard/" },
+                { text: "File-Structure", link: "file-structure/" },
             ],
         },
         { text: "Configuration", base: '/config/', link: "." },
