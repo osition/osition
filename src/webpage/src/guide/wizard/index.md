@@ -12,7 +12,7 @@ or via the delivered version after the installation
 /path/to/destination/jarklin/wizard
 ```
 
-After the launch you get a terminal-base UI
+After the launch, you get a terminal-based interactive UI for a convenient usage
 
 ![wizard-home](assets/initial-menu.png)
 
