@@ -5,9 +5,9 @@ layout: home
 titleTemplate: false
 
 hero:
-  name: "Jarklin"
-  text: "A Free Software Media System"
-  tagline: Currently under Development and not available
+  name: Jarklin
+  text: A Free Software Media System
+  tagline: Currently under Development and not stable
   actions:
     - theme: brand
       text: Guide
@@ -31,7 +31,7 @@ features:
         This prevents unwanted access to your media.
   - title: Easy to Set-Up
     icon: ⚙️
-    details: Hopefully soon Jarklin can be installed over docker or with a .deb package file.
+    details: Jarklin offers a convenient command-line wizard script for the Installation. Also there are additional ways to install it like .tgz or with Docker
 ---
 
 
@@ -40,7 +40,7 @@ import {
   VPTeamPage,
   VPTeamPageTitle,
   VPTeamMembers
-} from 'vitepress/theme'
+} from 'vitepress/theme';
 
 
 const members = [
