@@ -48,7 +48,7 @@ function nav(): DefaultTheme.NavItem[] {
         },
         {
             text: "Config",
-            link: '/config/jarklin',
+            link: '/config/config-options',
             activeMatch: '/config/',
         },
         {
@@ -91,13 +91,20 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
                 { text: "File-Structure", link: "file-structure/" },
             ]
         },
-        { text: "Configuration", base: '/config/', link: "." },
+        { text: "Configuration", base: '/config/', link: "config-options" },
     ];
 }
 
 function sidebarConfig(): DefaultTheme.SidebarItem[] {
     return [
-        { text: "Config-File", link: "jarklin" },
+        {
+            text: "Config",
+            collapsed: false,
+            items: [
+                { text: "Options", link: "config-options" },
+                { text: "Example", link: "config.yaml" },
+            ],
+        },
         {
             text: "Behind a Proxy",
             collapsed: false,

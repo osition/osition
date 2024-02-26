@@ -9,32 +9,59 @@ Jarklin requires an existing configuration file in the current directory to star
 > 
 > everything related to the web-server
 > 
-> > ### `web.host`
-> > 
-> > which network interface to bind to
-> > 
-> > eg: `localhost`, `127.0.0.1`, `0.0.0.0`
-> 
-> > ### `web.port`
-> > 
-> > which port to serve on
-> > 
-> > eg: `3000`, `5000`, `5050`, `8000`, `8080`
-> 
 > > ### `web.debug`
 > > 
 > > ::: warning
 > > debug-mode is only if you know what you are doing.
 > > Better you don't touch this
 > > :::
-> 
+>
 > > ### `web.baseurl`
-> > 
+> >
 > > which baseurl to use in case you host multiple services on you device
-> > 
+> >
 > > has to start with `/`
-> > 
+> >
 > > eg: `/jarklin`
+>
+> > ### `web.server`
+> > 
+> > jarklin uses [waitress](https://docs.pylonsproject.org/projects/waitress/en/stable/index.html) to serve the backend.
+> > All arguments are passed directory to `waitress.serve`. ([See all Arguments](https://docs.pylonsproject.org/projects/waitress/en/stable/arguments.html)) 
+> >
+> >  ::: warning
+> >  `web.server.host`, `web.server.port`, `web.server.listen` and `web.server.unix_socket` are mutually exclusive
+> >  :::
+> >
+> > > #### `web.server.threads`
+> > > 
+> > > number of threads to process requests
+> > > 
+> > > eg: `4`, `6`
+> >
+> > > #### `web.server.host`
+> > >
+> > > which network interface to bind to
+> > >
+> > > eg: `localhost`, `127.0.0.1`, `0.0.0.0`
+> >
+> > > #### `web.server.port`
+> > >
+> > > which port to serve on
+> > >
+> > > eg: `3000`, `5000`, `5050`, `8000`, `8080`
+> >
+> > > #### `web.server.listen`
+> > > 
+> > > 
+> > > 
+> > > eg: `127.0.0.1:8080 [::1]:8080`, `*:8080 *:6543`
+> >
+> > > #### `web.server.unix_socket`
+> > >
+> > > Unix-Domain-Socket path to bind to
+> > >
+> > > eg: `/tmp/jarklin.sock`
 > 
 > > ### `web.session`
 > > 
@@ -64,12 +91,28 @@ Jarklin requires an existing configuration file in the current directory to star
 > > 
 > > > #### `web.auth.username` / `web.auth.password`
 > > > Should be pretty self-explanatory
+> >
+> > > #### `web.auth.userpass`
+> > > path to an userpass file.
+> > > Each line contains a `username:password` pair
 > 
 > > ### `web.gzip`
+> > 
 > > Whether to gzip the content.
 > > Reduces the response-size of text-based responses on cost of CPU-Time.
 > > 
 > > note: Should be done by the Proxy-Server if possible. Otherwise, this is the option.
+> >
+> > eg: `yes`, `no`
+>
+> > ### `web.optimize`
+> > 
+> > Allow media optimization.
+> > Enabling this option allows for faster downloads as supported media is just-in-time optimized.
+> > 
+> > ::: danger
+> > Only use this option for a very small userbase as it can take up lots of system-resources.
+> > :::
 > >
 > > eg: `yes`, `no`
 > 
