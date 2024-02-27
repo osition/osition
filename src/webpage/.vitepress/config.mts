@@ -42,6 +42,11 @@ export default defineConfig({
 function nav(): DefaultTheme.NavItem[] {
     return [
         {
+            text: "Screenshot",
+            link: '/screenshot',
+            activeMatch: '/screenshot',
+        },
+        {
             text: "Guide",
             link: '/guide/what-is-jarklin',
             activeMatch: '/guide/',

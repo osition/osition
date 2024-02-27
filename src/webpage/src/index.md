@@ -9,6 +9,9 @@ hero:
   text: A Free Software Media System
   tagline: Currently under Development and not stable
   actions:
+    - theme: alt
+      text: Screenshot
+      link: /screenshot
     - theme: brand
       text: Guide
       link: /guide/what-is-jarklin
@@ -55,13 +58,13 @@ const members = [
 ]
 </script>
 
-<!--
-<div style="height: 25px;" />
-
-<h1 style="text-align: center;">Team</h1>
-
-<VPTeamMembers size="small" :members="members" />
--->
+<VPTeamPage>
+  <VPTeamPageTitle>
+    <template #title>
+        <img src="./assets/homepage-partial.png" alt="homepage partial" style="width: 100%;" />
+    </template>
+  </VPTeamPageTitle>
+</VPTeamPage>
 
 <VPTeamPage>
   <VPTeamPageTitle>
