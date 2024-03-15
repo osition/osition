@@ -2,9 +2,9 @@ import {DefaultTheme} from "vitepress";
 
 export default <DefaultTheme.NavItem[]>[
     {
-        text: "Screenshot",
-        link: '/screenshot',
-        activeMatch: '/screenshot',
+        text: "Screenshots",
+        link: '/screenshots',
+        activeMatch: '/screenshots',
     },
     {
         text: "Guide",

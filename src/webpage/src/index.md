@@ -61,7 +61,7 @@ const members = [
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-        <img src="./assets/homepage-partial.png" alt="homepage partial" style="width: 100%;" />
+        <img src="./assets/homepage-partial.webp" alt="homepage partial" style="width: 100%;" />
     </template>
   </VPTeamPageTitle>
 </VPTeamPage>
