@@ -15,7 +15,7 @@ Jarklin offers various ways to be installed to be perfect for your needs and you
 The recommended way is to use the wizard.
 :::
 
-- [Wizard](../wizard/index#install)
+- [Wizard](../wizard/index.md#installation)
   - The most convenient and recommended way to install Jarklin
 - [Archive](./archive.md)
   - Most control as you must specify where and how it's installed

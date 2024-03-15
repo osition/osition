@@ -1,4 +1,4 @@
-import {DefaultTheme, defineConfig} from 'vitepress'
+import {defineConfig} from 'vitepress'
 import nav from "./nav";
 import sidebar from "./sidebar";
 
