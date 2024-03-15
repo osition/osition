@@ -5,24 +5,31 @@ const sidebarGuide: DefaultTheme.SidebarItem[] = [
         text: "Introduction",
         items: [
             { text: "What is Jarklin?", link: 'what-is-jarklin' },
+            { text: "System Requirements", link: 'requirements' },
             {
-                text: "Installation",
-                link: 'installation/',
+                text: "How does Jarklin work?",
+                link: 'how-does-jarklin-work/',
                 items: [
-                    { text: "Archive", link: "installation/archive" },
-                    { text: "Pip", link: "installation/pip" },
-                    { text: "System Package", link: "installation/system-package" },
-                    { text: "Docker", link: "installation/docker" },
+                    { text: "File-Structure", link: "how-does-jarklin-work/file-structure" },
                 ]
             },
+        ],
+    },
+    {
+        text: "Installation",
+        link: "installation/",
+        items: [
             { text: "Wizard", link: "wizard/" },
+            { text: "Archive", link: "installation/archive" },
+            { text: "Docker", link: "installation/docker" },
+            { text: "Pip", link: "installation/pip" },
+            { text: "System Package", link: "installation/system-package" },
         ],
     },
     {
         text: "Other",
         items: [
             { text: "Commands", link: "commands" },
-            { text: "File-Structure", link: "file-structure/" },
         ]
     },
     { text: "Configuration", base: '/config/', link: "config-options" },
