@@ -9,9 +9,13 @@ Jarklin is designed to run unter linux (ubuntu).
 It may work on other systems but the Guide is for linux.
 :::
 
+::: info
+Ensure that all [external dependencies](../external-dependencies.md) are installed.
+:::
+
 Jarklin offers various ways to be installed to be perfect for your needs and your system.
 
-::: info
+::: tip
 The recommended way is to use the wizard.
 :::
 

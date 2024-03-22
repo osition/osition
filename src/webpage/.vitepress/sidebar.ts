@@ -6,6 +6,7 @@ const sidebarGuide: DefaultTheme.SidebarItem[] = [
         items: [
             { text: "What is Jarklin?", link: 'what-is-jarklin' },
             { text: "System Requirements", link: 'requirements' },
+            { text: "External Dependencies", link: 'external-dependencies' },
             {
                 text: "How does Jarklin work?",
                 link: 'how-does-jarklin-work/',
