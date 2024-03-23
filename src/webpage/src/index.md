@@ -10,8 +10,8 @@ hero:
   tagline: Currently under Development and not stable
   actions:
     - theme: alt
-      text: Screenshot
-      link: /screenshot
+      text: Screenshots
+      link: /screenshots
     - theme: brand
       text: Guide
       link: /guide/what-is-jarklin
