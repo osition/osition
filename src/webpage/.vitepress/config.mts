@@ -32,6 +32,7 @@ export default defineConfig({
             copyright: "Copyright © 2024-present Jarklin",
         },
     },
+    ignoreDeadLinks: "localhostLinks",
     // markdown: {
     //     toc: {
     //         level: [2, 3],
