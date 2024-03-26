@@ -16,7 +16,7 @@ Start a cache generation that runs once every hour at `xx:00`.
 
 ## `jarklin cache generate`
 
-Generates the cache. 
+Actively generates the cache. 
 
 ::: info
 This updates only missing or outdated entries.
@@ -25,9 +25,9 @@ So use this if you want to update the cache manually.
 
 ## `jarklin cache remove`
 
-remove the existing cache.
+Remove the existing cache.
 
-you could basically just delete the `.jarklin/` directory. **But** this could change any time.
+You could basically just delete the `.jarklin/` directory. **But** this could change any time.
 
 ## `jarklin cache regenerate`
 

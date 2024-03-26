@@ -52,4 +52,4 @@ is also supported in case you are more familiar with that format or prefer it fo
 
 The Wizard offers a convenient dialog to generate such a config file.
 
-See [Configuration](../../config/config-options) for more advanced options.
+See [Configuration](../../config/config/config-options.md) for more advanced options.

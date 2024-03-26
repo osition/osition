@@ -7,7 +7,7 @@ titleTemplate: false
 hero:
   name: Jarklin
   text: A Free Software Media System
-  tagline: Currently under Development and not stable
+  tagline: Currently under Development and may be unstable
   actions:
     - theme: alt
       text: Screenshots

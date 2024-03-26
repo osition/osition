@@ -39,17 +39,16 @@ const sidebarGuide: DefaultTheme.SidebarItem[] = [
 const sidebarConfig: DefaultTheme.SidebarItem[] = [
     {
         text: "Config",
-        collapsed: false,
+        link: "config/",
         items: [
-            { text: "Options", link: "config-options" },
-            { text: "Example", link: "config.yaml" },
+            { text: "Options", link: "config/config-options" },
+            { text: "Example", link: "config/config-yaml" },
         ],
     },
     {
         text: "Behind a Proxy",
-        collapsed: false,
+        link: "behind-a-proxy/",
         items: [
-            { text: "Info", link: "behind-a-proxy/" },
             { text: "Nginx", link: "behind-a-proxy/nginx" },
         ]
     }

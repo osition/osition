@@ -3,9 +3,12 @@
 ```yaml
 web:
   server:
+    host: "*"
     port: 9898
   gzip: yes
-  optimize: yes
+  optimize:
+    image: yes
+    video: no
   auth:
     username: "user"
     password: "pass"
@@ -26,7 +29,10 @@ web:
     port: 9898
     threads: 8
   gzip: yes
-  optimize: yes
+  optimize:
+    image: yes
+    video: no
+    video/mkv: yes
   session:
     permanent: yes
     lifetime: 3600  # 1h
