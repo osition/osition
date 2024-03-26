@@ -40,13 +40,13 @@ This will start the UI. Here you can select what the wizard should do.
 
 Select `Install Jarklin here` and press `<return>`.
 
-![](assets/jarklin-main-menu-install.png)
+![](assets/wizard-main-menu-install.png)
 
 Now to the features you want to install.
 Toggle them with `<space>`.
 If you have selected what you want to install you can press `<return>`.
 
-![](assets/jarklin-install-features.png)
+![](assets/wizard-install-features.png)
 
 After the installation you can exit the wizard.
 
@@ -66,9 +66,15 @@ curl -Ls https://github.com/jarklin/jarklin/raw/main/scripts/wizard.sh | bash
 
 Select `Generate a new config` and press `<return>`.
 
-![](assets/jarklin-main-menu-create-config.png)
+![](assets/wizard-main-menu-create-config.png)
 
 This should ask you step by step on how you want Jarklin to be configured and will generate a custom configuration file.
+
+![](assets/wizard-config-collection.png)
+
+In the end there should be a message that the generation is complete.
+
+![](assets/wizard-config-generation-complete.png)
 
 ## Cache generation and Server starting
 
