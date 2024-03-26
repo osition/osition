@@ -20,7 +20,7 @@ hero:
       link: /info/what-is-jarklin
     - theme: alt
       text: Config
-      link: /config/
+      link: /config/config/
   image:
     src: /jarklin.svg
     width: 512

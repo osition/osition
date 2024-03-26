@@ -18,7 +18,7 @@ export default <DefaultTheme.NavItem[]>[
     },
     {
         text: "Config",
-        link: '/config/config-options',
+        link: '/config/config/config-options',
         activeMatch: '/config/',
     },
     {
