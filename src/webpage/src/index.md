@@ -13,8 +13,11 @@ hero:
       text: Screenshots
       link: /screenshots
     - theme: brand
-      text: Guide
-      link: /guide/what-is-jarklin
+      text: Quick-Start
+      link: /quick-start/
+    - theme: alt
+      text: Info
+      link: /info/what-is-jarklin
     - theme: alt
       text: Config
       link: /config/

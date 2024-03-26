@@ -55,6 +55,6 @@ const sidebarConfig: DefaultTheme.SidebarItem[] = [
 ]
 
 export default <DefaultTheme.Sidebar>{
-    '/guide/': {'base': '/guide/', items: sidebarGuide},
+    '/info/': {'base': '/info/', items: sidebarGuide},
     '/config/': {'base': '/config/', items: sidebarConfig},
 }

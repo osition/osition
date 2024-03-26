@@ -2,11 +2,11 @@
 
 ::: info
 Jarklin requires an existing configuration file in the current directory to start.
-([More information](../../guide/wizard/index.md#create-config))
+([More information](../../info/wizard/index.md#create-config))
 :::
 
 ::: tip
-Use the [wizard](../../guide/wizard/index.md#config-generation) to create your config.
+Use the [wizard](../../info/wizard/index.md#config-generation) to create your config.
 The wizard should be more than enough for the average user.
 Only if you need more specialisation or optimization you should look here.
 :::

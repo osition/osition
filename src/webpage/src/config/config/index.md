@@ -9,7 +9,7 @@ The filename is either `.jarklin.yaml` or `.jarklin/config.yaml`.
 See [available options](config-options.md) or [an example configuration](config-yaml.md).
 
 ::: tip
-Use the [wizard](../../guide/wizard/index.md#config-generation) to create your config.
+Use the [wizard](../../info/wizard/index.md#config-generation) to create your config.
 The wizard should be more than enough for the average user.
 Only if you need more specialisation or optimization you should look here.
 :::

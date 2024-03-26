@@ -7,9 +7,14 @@ export default <DefaultTheme.NavItem[]>[
         activeMatch: '/screenshots',
     },
     {
-        text: "Guide",
-        link: '/guide/what-is-jarklin',
-        activeMatch: '/guide/',
+        text: "Quick Start",
+        link: '/quick-start/',
+        activeMatch: '/quick-start/',
+    },
+    {
+        text: "Info",
+        link: '/info/what-is-jarklin',
+        activeMatch: '/info/',
     },
     {
         text: "Config",
