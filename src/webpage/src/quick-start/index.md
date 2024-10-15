@@ -144,7 +144,7 @@ ExecStart=/opt/jarklin web run
 Restart=on-failure
 
 [Install]
-WantedBy=multi-user.t
+WantedBy=multi-user.target
 ```
 
 ```service [jarklin-cache.service]
