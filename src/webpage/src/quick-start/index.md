@@ -4,12 +4,13 @@
 
 First we will install the dependencies.
 
+- python3 is needed by the Jarklin server as the runtime
 - ffmpeg is needed by the Jarklin server to process videos
 - curl is used to download the wizard and by the wizard to download additional assets
 - whiptail is used by the wizard as the UI
 
 ```bash
-sudo apt install ffmpeg curl whiptail
+sudo apt install python3 python3-pip ffmpeg curl whiptail
 ```
 
 ::: warning
@@ -109,9 +110,60 @@ For that purpose we will create a service.
 Write the following service configuration into `/etc/systemd/system/jarklin.service`.
 (Adjust the content to your needs)
 
-```service
-// todo
+Use `jarklin.service` if the web-server and the cache-generation should be combined.
+Or use two services (`jarklin-web.service`+`jarklin-cache.service`) if you prefer more control.
+
+::: code-group
+
+```service [jarklin.service]
+[Unit]
+Description=Jarklin
+After=network.target
+
+[Service]
+Type=simple
+User=myuser
+WorkingDirectory=/path/to/media/
+ExecStart=/opt/jarklin run
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
 ```
+
+```service [jarklin-web.service]
+[Unit]
+Description=Jarklin Web
+After=network.target
+
+[Service]
+Type=simple
+User=myuser
+WorkingDirectory=/path/to/media/
+ExecStart=/opt/jarklin web run
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.t
+```
+
+```service [jarklin-cache.service]
+[Unit]
+Description=Jarklin Cache
+After=network.target
+
+[Service]
+Type=simple
+User=myuser
+WorkingDirectory=/path/to/media/
+ExecStart=/opt/jarklin cache run
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
+```
+
+:::
 
 After that we will tell systemctl to search for new/changed `.service` files,
 enable auto-start of Jarklin after reboot and to start Jarklin.
