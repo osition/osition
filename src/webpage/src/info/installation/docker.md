@@ -14,7 +14,7 @@ copy this code into a file named `Dockerfile`
 ```dockerfile
 FROM python:3.10-slim
 
-ARG JARKLIN_SRC="https://github.com/jarklin/jarklin/releases/download/latest/jarklin.tgz"
+ARG JARKLIN_SRC="https://github.com/jarklin/jarklin-server/releases/download/latest/jarklin.tgz"
 ARG WEB_SRC="https://github.com/jarklin/jarklin-web/releases/download/latest/web-ui.tgz"
 ARG FILES="/files/"
 ARG PORT=5000
@@ -87,14 +87,14 @@ docker run -d --rm --publish 5000:5000 --mount type=bind,source="$(pwd)",target=
 ### running with docker-compose
 
 ```yaml
-version: "2.1"
+version: "3.8"
 services:
   web:
     image: jarklin
     command: web run
     container_name: jarklin web
     volumes:
-      - ./:/files/
+      - ./:/files/:ro
     ports:
       - "5000:5000"
     restart: unless-stopped
