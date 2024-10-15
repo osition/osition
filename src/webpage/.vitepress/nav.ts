@@ -24,9 +24,10 @@ export default <DefaultTheme.NavItem[]>[
     {
         text: "Repos",
         items: [
-            {text: "Jarklin-Website", link: "https://github.com/jarklin/jarklin.github.io", target: "_blank"},
-            {text: "Jarklin-Server", link: "https://github.com/jarklin/jarklin", target: "_blank"},
+            {text: "Jarklin", link: "https://github.com/jarklin/jarklin", target: "_blank"},
+            {text: "Jarklin-Server", link: "https://github.com/jarklin/jarklin-server", target: "_blank"},
             {text: "Jarklin-WebUI", link: "https://github.com/jarklin/jarklin-web", target: "_blank"},
+            {text: "Jarklin-Website", link: "https://github.com/jarklin/jarklin.github.io", target: "_blank"},
         ]
     }
 ]
